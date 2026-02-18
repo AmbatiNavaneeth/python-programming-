@@ -48,7 +48,7 @@ count = sum(mark >= 35 for mark in [m, p, c])
 print("Pass" if count >= 2 else "Fail")
 
 # 10 Biggest Among Three
-a = int(input("Enter first number for biggest among three: "))
+a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 c = int(input("Enter third number: "))
 print("Biggest:", max(a, b, c))
@@ -57,7 +57,7 @@ print("Biggest:", max(a, b, c))
 print("Smallest:", min(a, b, c))
 
 # 12 Perfect Square
-num = int(input("Enter number to check perfect square: "))
+num = int(input("Enter number: "))
 print("Perfect Square" if int(num**0.5)**2 == num else "Not Perfect Square")
 
 # 13 Cars Required (5 per car)
@@ -67,7 +67,7 @@ print("Cars Needed:", cars)
 
 # 14 Second Biggest Among Three
 nums = []
-nums.append(int(input("Enter first number for second biggest: ")))
+nums.append(int(input("Enter first number: ")))
 nums.append(int(input("Enter second number: ")))
 nums.append(int(input("Enter third number: ")))
 nums.sort()
