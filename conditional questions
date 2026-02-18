@@ -1,1 +1,79 @@
+# ---------------- CONDITIONAL QUESTIONS ----------------
 
+print("\n---- CONDITIONAL QUESTIONS ----")
+
+# 1 Even or Odd
+num = int(input("Enter a number to check Even/Odd: "))
+print("Even" if num % 2 == 0 else "Odd")
+
+# 2 Divisible by 5 but not 10
+num = int(input("Enter a number to check divisible by 5 but not 10: "))
+print("Satisfy" if num % 5 == 0 and num % 10 != 0 else "Not Satisfy")
+
+# 3 Biggest Among Two
+a = int(input("Enter first number for biggest among two: "))
+b = int(input("Enter second number: "))
+print("Biggest:", max(a, b))
+
+# 4 Smallest Among Two
+print("Smallest:", min(a, b))
+
+# 5 Divisible by 2,3,6
+num = int(input("Enter number to check divisibility by 2,3,6: "))
+print("Divisible by 2,3,6" if num % 6 == 0 else "Not Divisible")
+
+# 6 Voting Eligibility
+age = int(input("Enter age to check voting eligibility: "))
+print("Eligible" if age >= 18 else "Not Eligible")
+
+# 7 Pass if All Subjects >=35
+m = int(input("Enter Maths marks: "))
+p = int(input("Enter Physics marks: "))
+c = int(input("Enter Chemistry marks: "))
+print("Pass" if m >= 35 and p >= 35 and c >= 35 else "Fail")
+
+# 8 Pass if Any One Subject >=35
+m = int(input("Enter Maths marks: "))
+p = int(input("Enter Physics marks: "))
+c = int(input("Enter Chemistry marks: "))
+print("Pass" if m >= 35 or p >= 35 or c >= 35 else "Fail")
+
+# 9 Pass if Any Two Subjects >=35
+m = int(input("Enter Maths marks: "))
+p = int(input("Enter Physics marks: "))
+c = int(input("Enter Chemistry marks: "))
+count = sum(mark >= 35 for mark in [m, p, c])
+print("Pass" if count >= 2 else "Fail")
+
+# 10 Biggest Among Three
+a = int(input("Enter first number for biggest among three: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+print("Biggest:", max(a, b, c))
+
+# 11 Smallest Among Three
+print("Smallest:", min(a, b, c))
+
+# 12 Perfect Square
+num = int(input("Enter number to check perfect square: "))
+print("Perfect Square" if int(num**0.5)**2 == num else "Not Perfect Square")
+
+# 13 Cars Required (5 per car)
+members = int(input("Enter number of members: "))
+cars = math.ceil(members / 5)
+print("Cars Needed:", cars)
+
+# 14 Second Biggest Among Three
+nums = []
+nums.append(int(input("Enter first number for second biggest: ")))
+nums.append(int(input("Enter second number: ")))
+nums.append(int(input("Enter third number: ")))
+nums.sort()
+print("Second Biggest:", nums[1])
+
+# 15 Leap Year
+year = int(input("Enter year to check leap year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap Year")
+else:
+    print("Not Leap Year")
