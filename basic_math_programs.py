@@ -26,7 +26,6 @@ print("Area of triangle is:", area_triangle)
 # Area of triangle is: 20.0
 
 
-
 # ---------------- PERIMETER PROGRAMS ----------------
 
 # Perimeter of Square
@@ -106,3 +105,45 @@ average = (maths + physics + chemistry) / 3
 print("Average marks:", round(average, 2))
 # Sample Output:
 # Average marks: 87.67
+
+# ---------------- BASIC PROGRAMS ----------------
+
+# 1 Swap without third variable
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+a=a+b
+b=a-b
+a=a-b
+print(a,b)
+
+# 2 Positive / Negative / Zero
+n = int(input("Enter a number to check positive/negative/zero: "))
+if n > 0:
+    print("Number is Positive")
+elif n < 0:
+    print("Number is Negative")
+else:
+    print("Number is Zero")
+
+# 3 Area Rectangle + Square check
+l = int(input("Enter length of rectangle: "))
+b = int(input("Enter breadth of rectangle: "))
+area = l * b
+print("Area:", area)
+print("Square" if l == b else "Rectangle")
+
+# 4 Simple Interest
+P = float(input("Enter Principal (P): "))
+R = float(input("Enter Rate (R%): "))
+T = float(input("Enter Time (T years): "))
+SI = (P * R * T) / 100
+print("Simple Interest:", SI)
+
+# 5 Bitwise Operations
+x = int(input("Enter first number for bitwise operations: "))
+y = int(input("Enter second number for bitwise operations: "))
+print("AND:", x & y)
+print("OR:", x | y)
+print("XOR:", x ^ y)
+print("Left Shift:", x << 1)
+print("Right Shift:", x >> 1)
