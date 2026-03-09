@@ -106,6 +106,69 @@ def Salary_Deduction_Calculator(salary):
         return "High Income"
     return "Standard Income"
 
+🚀 Single-Digit or Multi-Digit Number:
+def Single_Digit_Or_Multi_Digit_Number(num):
+   if -9<=num<=9:
+    return "Single-digit number"
+   else:
+    return "Multi-digit number"
+
+🚀 Perfect Number:
+def PerfectNumber(n):
+    if n<1:
+        return False
+    summ=0
+    for i in range(1,n-1):
+        if n%i==0:
+            summ+=i
+        else:
+            pass
+    return True if  n==summ else False
+
+🚀 Merge Dictionaries with Sum:
+    def mergeDict(d1, d2):
+    res = {}
+    for k in d1:
+        if k in d2:
+            res[k] = d1[k] + d2[k]
+        else:
+            res[k] = d1[k]
+    for k in d2:
+        if k not in res:
+            res[k] = d2[k]
+    return res
+
+🚀 Electricity Bill Slab Logic:
+def Electricity_Bill_Slab_Logic(units):
+    if units<0:
+        return None
+    bill=0
+    if units<=100:
+        return 0
+    elif units>=101 and units<=300:
+        bill=(units-100)*5
+        return bill
+    else:
+        bill=200*5 + (units-300)*10
+        return bill
+
+🚀 Sum of Digits of a Number:
+def sumOfDigits(n):
+    if n<=0:
+        return 0
+    summ=0
+    for digit in str(n):
+        summ+=int(digit)
+    return summ
+# def sumOfDigits(n):
+#     total = 0
+#     for digit in str(n):
+#         total += int(digit)
+#     return total
+
+
+
+
 
 
 
