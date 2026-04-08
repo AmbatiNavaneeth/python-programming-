@@ -105,6 +105,18 @@ if original == total:
 else:
     print("Not Armstrong")
 
+n=153
+a=str(n)
+x=len(a)
+ans=0
+for ch in a:
+    b=int(ch)**x
+    ans+=b
+if ans==int(a):
+    print(True)
+else:
+    print(False)
+
 >>>>>>Harshad Number<<<<<<<
 
 n = int(input("Enter number: "))
